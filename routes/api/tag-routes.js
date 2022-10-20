@@ -60,7 +60,6 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  //does it need to be ProductTag or just Tag on line 71?
   Tag.update(req.body, {
     where: {
       tag_id: req.params.tag_id,
@@ -104,7 +103,6 @@ router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
   Comment.destroy({
     where: {
-      //is this just id: or tag_id?
       tag_id: req.params.id
     }
   })
