@@ -31,7 +31,7 @@ DB_PW= 'mySQLpassword'
 
 Then, you need to open the mysql terminal. This can be done by typing 'mysql -u root -p' into the command line or gitbash. Then, you will enter your mySQL password (that is the same used in DB_PW). Then type 'source db/schema.sql', 'quit', and 'npm run seed'. Following, ensure that 'sequelize.sync({ force: false })' is set to FALSE in the server.js file found in the root folder. Then type 'npm run start'. Then, you can use the Insomnia application to test the different routes.
 
-A video walkthrough can be found [here]().
+A video walkthrough can be found [here](https://drive.google.com/file/d/1jP5CFZZCh0HZmug8_V1JEO9vpkUeQehY/view?usp=sharing).
 
 Below is an example of the code found in the config folder under the file named connection.js. This code establishes a connection to SQL through Sequelize.
 ![connection.js](assets/img/connectionjs.png)
